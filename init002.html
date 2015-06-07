@@ -1,0 +1,52 @@
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta content="width=device-width, user-scalable=no,minimum-scale=0.5, maximum-scale=1.0" name="viewport" />
+		<title>初期設定002</title><!--セクシーVS清純　かわいいVSきれい　熟女VSロリ-->
+		<link rel="stylesheet" href="./menu/css/bootstrap.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/for_init.css">
+	</head>
+	<body>
+		<nav id="header" role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<a class="navbar-brand">Bijo Map</a>
+			</div>
+		</nav>
+		<div id="main">
+			<div class="item" id="cute" style="background-image:url('./img/cute004.jpg')" onclick=""></div>
+			<div class="alert alert-info">
+				<strong>どちらの美女が好き！？</strong>
+			</div>
+			<div class="item" id="beauty" style="background-image:url('./img/beauty003.jpg')" onclick=""></div>
+		</div>
+		<script src="./menu/js/jquery-2.0.2.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<script src="./menu/js/main.js"></script>
+		<script src="./menu/js/send.js"></script>
+		<script src="menu/js/web-native.js"></script>
+		<script src="./js/init_set.js"></script>
+		<script>
+			//クリックされた美女の傾向をPOST
+			var cute = document.getElementById('cute');
+			var beauty = document.getElementById('beauty');
+			cute.onclick = function() {
+			console.log("cute clicked.");
+			setGirlPreference(true, false, false, false, false, false, function(res) {
+			jump();
+			});
+			}
+			beauty.onclick = function() {
+			console.log("beauty clicked.");
+			setGirlPreference(false, true, false, false, false, false, function(res) {
+			jump();
+			});
+			}
+			var jump = function() {
+			location.href="./init003.html";
+			}
+		</script>
+	</body>
+</html>

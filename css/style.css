@@ -1,0 +1,27 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+#header {
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+  padding-top: 13px;
+  margin: 0px;
+}
+#header button {
+  border-color: #fff;
+}
+#header .navbar-brand {
+  color: #fff;
+}
+#main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 64px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}

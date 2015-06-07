@@ -1,0 +1,15 @@
+#main > h5{
+	position: relative;
+	width: 300px;
+	top: 170px;
+	margin: 10px 10px 0px;
+	float: left;
+}
+
+#main > .progress{
+	position: relative;
+	width: 300px;
+	top: 170px;
+	margin: 10px;
+	float: left;
+}

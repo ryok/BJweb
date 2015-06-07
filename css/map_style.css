@@ -1,0 +1,116 @@
+
+/*お気に入りボタンのスタイル
+.favBtn {
+	font-size:16px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #eda933;
+	padding:9px 18px;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #f6b33d), color-stop(100%, #d29105) );
+	background:-moz-linear-gradient( center top, #f6b33d 5%, #d29105 100% );
+	background:-ms-linear-gradient( top, #f6b33d 5%, #d29105 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d', endColorstr='#d29105');
+	background-color:#f6b33d;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:1px 1px 0px #cd8a15;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #fed897;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #fed897;
+ 	box-shadow:inset 1px 1px 0px 0px #fed897;
+}.favBtn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #d29105), color-stop(100%, #f6b33d) );
+	background:-moz-linear-gradient( center top, #d29105 5%, #f6b33d 100% );
+	background:-ms-linear-gradient( top, #d29105 5%, #f6b33d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d29105', endColorstr='#f6b33d');
+	background-color:#d29105;
+}.favBtn:active {
+	position:relative;
+	top:1px;
+}*/
+
+/*詳細情報ボタンのスタイル*/
+button.dBtn {
+    /* 文字サイズを1.4emに指定 */
+    font-size: 0.9em;
+
+    /* 文字の太さをboldに指定 */
+    /*font-weight: bold;*/
+
+    /* 縦方向に10px、
+     * 横方向に30pxの余白を指定 */
+    padding: 5px 10px;
+
+    /* 背景色を濃い青色に指定 */
+    /*background-color: #248;*/
+    background-color: #FF3366;
+
+    /* 文字色を白色に指定 */
+    color: #fff;
+
+    /* ボーダーをなくす */
+    border-style: none;
+
+    /* ボタンの影の指定
+     * 影の横幅を2px
+     * 縦長を2px
+     * ぼかしを3px
+     * 広がりを1px
+     * 色を#666（グレー）に指定 
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;*/
+
+    /* テキストの影の指定
+     * 影の横幅を1px
+     * 縦長を1px
+     * ぼかしを2px
+     * 色を#000（黒）に指定 
+    text-shadow: 1px 1px 2px #000;*/
+
+    /* 角丸の指定 */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+button.dBtn:hover {
+	/* 背景色を明るい青色に指定 */
+    /*background-color: #24d;*/
+    background-color: #CC3366;
+    /* 文字色を白色に指定 */
+    color: #fff;
+}
+
+/*お気に入りボタンのスタイル*/
+.favBtn {
+    font-size: 1em;
+    padding: 5px 10px;
+    background-color: #f6b33d;
+    color: #fff;
+    border-style: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}.favBtn:hover {
+    background-color:#d29105;
+    color: #fff;
+}
+
+/* infowinのimg */
+.infowin img{
+	position: relative;
+	width: 100px;
+	border: solid 3px #ffb6c1;
+	margin-bottom: 10px; 
+}
+
+.infowin dt{
+	position: relative;
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;	
+	text-overflow:ellipsis
+}

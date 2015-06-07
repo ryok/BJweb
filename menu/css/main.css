@@ -1,0 +1,212 @@
+/*共通スタイル*/
+html, body {
+	padding: 0 !important;
+	margin: 0 !important;
+	font-family: "HiraKakuProN-W6" !important;
+	width: 100% !important;
+	height: 100% !important;
+	overflow: hidden !important;
+}
+
+/*メニュースタイル*/
+#panel {
+	position: absolute;
+	height: 100%;
+	width: 200px;
+	border: 1px solid #ddd;
+	float: left;
+	display: block;
+	font-size: 16px;
+	left: -201px;
+	background: white;
+	z-index: 1040;
+}
+
+#panel img {
+	position: absolute;
+	width: 30px;
+	right: 10px;
+	margin: 20px 0 0 0;
+	z-index: 2;
+}
+
+.menuRow {
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+
+#menuBar {
+	background: rgb(86, 61, 124);
+	color: #fff;
+	line-height: 65px;
+}
+
+#mapBar,
+#favoBar,
+#profileBar {
+	color: #000;
+}
+
+/*ヘッダーのスタイル*/
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 64px;
+	line-height: 84px;
+	background: #ffd5ec;
+	z-index: 10;
+	text-align: center;
+	border-bottom: 2px solid #FF1A6F;
+	font-size: 25px;
+}
+
+#lBtn {
+	position: absolute;
+	width: 30px;
+	left: 5px;
+	z-index: 20;
+}
+
+#lBtn img {
+	width: 30px;
+	margin: 27px 0;
+}
+
+/*
+ * メインコンテンツのスタイル
+ * ヘッダー固定でコンテンツスクロールを設定
+ */
+#wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 64px;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+/*お気に入り画面のスタイル*/
+#favContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.item {
+	margin: 8px;
+	padding: 10px;
+	width: 50px;
+	min-height: 100px;
+	box-shadow: 0 3px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 3px 3px rgba(34,25,25,0.4);
+	background: white;
+}
+
+.item > img {
+	position: relative;
+	width: 100%;
+}
+
+/*概要画面のスタイル*/
+#dContainer {
+	position: relative;
+}
+
+.sName {
+	both: clear;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+}
+
+#dSName {
+	position: relative;
+	margin: 10px;
+	font-size: 24px;
+}
+
+#dSImg {
+	position: relative;
+	width: 80%;
+	left: 10%;
+	margin: 10px 0;
+	background: white;
+	border-radius: 10px;
+}
+
+#dSImg img {
+	position: relative;
+	width: 80%;
+	left: 10%;
+	padding: 10px 0;
+}
+
+#dSInfo {
+	margin: 10px;
+	padding: 10px;
+	background: rgb(231, 237, 240);
+}
+
+#dSSalary,
+#dSWork {
+	border-bottom: 1px dashed #aaa;
+}
+
+.dSLabel {
+	color: blue;
+}
+
+.owlImg {
+	position: relative;
+	width: 100%;
+}
+
+.owlImg img {
+	position: relative;
+	max-width: 50%;
+	left: 25%;
+}
+
+#owl-example {
+	background: rgb(231, 237, 240);
+	border-radius: 10px;
+	width: 94%;
+	left: 3%;
+	bottom: 10px;
+	padding: 10px 0;
+}
+
+#recommendation {
+	margin: 20px 0;
+	color: blue;
+	padding: 0 10px;
+}
+
+/*ボタンのスタイル*/
+.rehackBtn {
+	position: relative;
+	width: 96%;
+	left: 2%;
+	margin: 5px 0;
+	padding: 5px 0;
+	border-radius: .4em;
+	text-align: center;
+}
+
+.wBtn a {
+	text-decoration: none;
+	color: white;
+}
