@@ -162,7 +162,8 @@ function getInformation(userID) {
         sw: southWest
     };*/
     //var url = "http://rehack-node.cloudapp.net/map/";
-    var url = "http://rehack-node.cloudapp.net/map/" + url_params; 
+    //var url = "http://rehack-node.cloudapp.net/map/" + url_params; 
+    var url = "http://artra.cloudapp.net:3000/map/" + url_params; 
 
     //マップ上に表示する求人（美女）取得GET
     sendRequest("GET", url, {}, function(data) {

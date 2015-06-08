@@ -11,10 +11,11 @@ var registeredFlag = false;
 // offerIdがある場合
 if(offerId) {
 	type = "GET";
-	url = "http://rehack-node.cloudapp.net/";
+	url = "http://artra.cloudapp.net:3000/";
+	//url = "http://rehack-node.cloudapp.net/";
 } else {
 	type = "JSONP";
-	url = "http://192.168.1.20/~kato_takahiro/rehack/menu/data.jsonp";
+	url = "http://192.168.1.20/~kato_takahiro/rehackf/data.jsonp";
 }
 
 var offerUrl = url + "offer?offerId=" + offerId;
@@ -62,7 +63,7 @@ sendRequest(type, offerUrl, {}, function(data) {
 							$(".favBtn").attr("id", data._id);
 						}
 						// 『この美女をお気に入りに登録している人は他にこんな美女をお気に入りに登録しています』の処理
-						var array = ["./menu/img/girl1.jpg", "./menu/img/girl2.jpg", "./menu/img/girl3.png", "./menu/img/girl4.jpg", "./menu/img/girl5.jpg", "./menu/img/girl6.gif", "./menu/img/girl7.jpg"];
+						var array = ["./img/girl1.jpg", "./img/girl2.jpg", "./img/girl3.png", "./img/girl4.jpg", "./img/girl5.jpg", "./img/girl6.gif", "./img/girl7.jpg"];
 						var arrayLen = array.length;
 						for(var i=0; i < arrayLen; i++) {
 							$("#owl-example").append("<div class='owlImg'><img src=" + array[i] + " /></div>");

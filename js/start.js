@@ -16,14 +16,15 @@ $(function() {
         		console.log("uID : " + uID);
 
         		//マップ画面に遷移
-        		document.location = "./girlMap.html";
+        		document.location = "./girlmap.html";
 
 				// ユーザIDが取得できない場合
 			} else if(uID.indexOf("Failed") != -1) {
         		console.log("can not get user id : " + uID);
 
         		var type = "POST";
-        		var url = "http://rehack-node.cloudapp.net/user";
+        		//var url = "http://rehack-node.cloudapp.net/user";
+        		var url = "http://artra.cloudapp.net:3000/user";
         		sendRequest(type, url, {}, function(data) {
         			//成功の場合
         			if(data && data._id) {

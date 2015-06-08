@@ -1,6 +1,7 @@
 $(function(){
 	// var url = 'http://' + location.hostname + ':3000/user';
-	var url = 'http://rehack-node.cloudapp.net/user';
+	//var url = 'http://rehack-node.cloudapp.net/user';
+	var url = 'http://artra.cloudapp.net:3000/user';
 	var userId;
 	var d = [];
 	
@@ -55,6 +56,6 @@ $(function(){
 	});;
 
 	$('#main > button').on('click touchend', function(){
-		location.href = './girlMap.html';
+		location.href = './girlmap.html';
 	});
 });

@@ -27,7 +27,8 @@ webNative.getUserID(function(uID) {
     }
 });
 
-var url = "http://rehack-node.cloudapp.net:3000/user?userId=" + userID;
+//var url = "http://rehack-node.cloudapp.net:3000/user?userId=" + userID;
+var url = "http://artra.cloudapp.net:3000/user?userId=" + userID;
 
 // 女の子の好み情報をGET
 sendRequest(type, url, {}, function(data) {

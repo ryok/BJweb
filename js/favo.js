@@ -7,7 +7,8 @@ webNative.getUserID(function(uID) {
 	// ユーザIDを取得できた場合
 	if(uID && uID.indexOf("Failed") == -1) {
 		var type = "GET";
-		var url = "http://rehack-node.cloudapp.net/fav?userId=" + uID;
+		var url = "http://artra.cloudapp.net:3000/fav?userId=" + uID;
+		//var url = "http://rehack-node.cloudapp.net/fav?userId=" + uID;
 		sendRequest(type, url, {}, function(data) {
 			// お気に入り登録がある場合
 			if(data && data.length > 0) {
@@ -41,7 +42,8 @@ webNative.getUserID(function(uID) {
 	// PCからアクセスした場合
 	} else {
 		var type = "JSONP";
-		var url = "http://rehacktest.azurewebsites.net/menu/data.jsonp";
+		//var url = "http://rehacktest.azurewebsites.net/menu/data.jsonp";
+		var url = "http://artra.cloudapp.net:3000/menu/data.jsonp";
 		sendRequest(type, url, {}, function(data) {
 			// お気に入り登録がある場合
 			if(data && data.length > 0) {

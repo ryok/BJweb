@@ -1,8 +1,8 @@
 jQuery( function($) {
 
 	//遷移先のURLを設定
-	//var url = "http://192.168.1.20/~kato_takahiro/";
-	var url = "http://rehack-node.cloudapp.net";
+	var url = "http://artra.cloudapp.net:3000/";
+	//var url = "http://rehack-node.cloudapp.net";
 
 	// メニュー開閉ボタンをクリックしたときの処理
 	$("#lBtn img").bind("click", function() {
@@ -36,7 +36,7 @@ jQuery( function($) {
 
 	// メニューからマップを選択したときの処理
 	$("#mapBar").bind("click", function() {
-		location.href = url + "/girlMap.html";
+		location.href = url + "/girlmap.html";
 	});
 
 	// メニューからお気に入りを選択したときの処理
@@ -94,7 +94,7 @@ jQuery( function($) {
 					}
 					var nowUrl = location.href;
 					// マップからの遷移ではない場合
-					if(nowUrl.indexOf("girlMap") == -1) {
+					if(nowUrl.indexOf("girlmap") == -1) {
 						location.reload(true);
 					}
 				});
