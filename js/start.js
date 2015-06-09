@@ -43,7 +43,7 @@ $(function() {
 			} else {
         		console.log("uID : " + uID);
 
-        		//マップ画面に遷移
+        		//プロファイル取得画面に遷移
         		document.location = "./init001.html";
         		//document.location = "./map.html";
 			}
