@@ -23,6 +23,7 @@ webNative.saveUserID = function(userID, callback) {
 // iPhone/iPad以外からアクセスした場合: PC_ACCESS が返る
 webNative.getUserID = function(callback) {
 	var agent = navigator.userAgent;
+	console.log('webNative get User ID...');
 
 	// iPhone/iPadの場合
 	if(agent.indexOf('iPhone') != -1 || agent.indexOf('iPad') != -1) {

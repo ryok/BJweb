@@ -4,7 +4,7 @@ $(function() {
 	$('#main > .progress > .progress-bar').animate({width: '90%'},0);
 
 	event.preventDefault();
-	console.log("startButton clicked.");
+	console.log("start.js starting.");
 
 	setTimeout(function(){	
 
