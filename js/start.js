@@ -11,8 +11,8 @@ $(function() {
 		// ユーザIDの取得
 		webNative.getUserID(function(uID) {
 
-			//テスト用
-			uID = "PC_ACCESS";
+			//テスト用 
+			uID = "Failed";
 
 			// ユーザIDを取得できた場合
 			if(uID && uID.indexOf("Failed") == -1) {
