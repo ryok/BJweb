@@ -24,7 +24,7 @@ $(function() {
 
         		var type = "POST";
         		//var url = "http://rehack-node.cloudapp.net/user";
-        		var url = "http://artra.cloudapp.net:3000/user";
+        		var url = "http://artra.cloudapp.net/user";
         		sendRequest(type, url, {}, function(data) {
         			//成功の場合
         			if(data && data._id) {

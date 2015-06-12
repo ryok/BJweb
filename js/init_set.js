@@ -39,7 +39,7 @@ var setGirlPreference = function(cute, beatiful, lolita, milf, sexy, pure, callb
 				'pure': pure
 			};
 
-		//女の子の好みをPOST
+		//女の子の好みをPUT
 		sendRequest(type, url, params, function(data) {
 			console.log("data : " + data);
 			if (data != "error") {
