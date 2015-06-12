@@ -7,7 +7,7 @@ var setGirlPreference = function(cute, beatiful, lolita, milf, sexy, pure, callb
     //console.log("setGirlPreference start..");
     var type = "PUT";
     //var url = "http://rehack-node.cloudapp.net/user";
-    var url = "http://artra.cloudapp.net:3000/user";
+    var url = "http://artra.cloudapp.net/user";
 
     // ユーザIDの取得
     var userID = "";
