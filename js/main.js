@@ -36,17 +36,17 @@ jQuery( function($) {
 
 	// メニューからマップを選択したときの処理
 	$("#mapBar").bind("click", function() {
-		location.href = url + "/girlmap.html";
+		location.href = url + "views/girlmap.html";
 	});
 
 	// メニューからお気に入りを選択したときの処理
 	$("#favoBar").bind("click", function() {
-		location.href = url + "/registerFavo.html";
+		location.href = url + "views/registerFavo.html";
 	});
 
 	// メニューからプロファイル設定を選択したときの処理
 	$("#profileBar").bind("click", function() {
-		location.href = url + "/profile2.html";
+		location.href = url + "views/profile2.html";
 	});
 
 	// ヘッダーのタッチ操作を無効にする
@@ -67,7 +67,7 @@ jQuery( function($) {
 	// ショップ概要に遷移
 	$(document).on("click", ".dBtn", function() {
 		var offerId = this.id.split("_")[1];
-		location.href = url + "/detail.html?offerId=" + offerId;
+		location.href = url + "views/detail.html?offerId=" + offerId;
 	});
 
 	// お気に入り登録の処理

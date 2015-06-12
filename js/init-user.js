@@ -4,22 +4,22 @@ $(function() {
 	$('#main > .progress > .progress-bar').animate({width: '90%'},0);
 
 	event.preventDefault();
-	console.log("start.js starting.");
+	console.log("init-user.js starting...");
 
-	setTimeout(function(){	
+	setTimeout(function(){
 
 		// ユーザIDの取得
 		webNative.getUserID(function(uID) {
 
-			//テスト用 
-			uID = "Failed";
+			//テスト用
+			//uID = "Failed";
 
 			// ユーザIDを取得できた場合
 			if(uID && uID.indexOf("Failed") == -1) {
         		console.log("uID : " + uID);
 
         		//マップ画面に遷移
-        		document.location = "./girlmap.html";
+        		document.location = "views/girlmap.html";
 
 				// ユーザIDが取得できない場合
 			} else if(uID.indexOf("Failed") != -1) {
@@ -34,7 +34,7 @@ $(function() {
 						console.log("id : " + data._id);
 						webNative.saveUserID(data._id, function(uID) {
 							//初期設定画面に遷移
-							document.location = "./init001.html";
+							document.location = "views/choice1.html";
 						});
         				//失敗の場合
         			} else {
@@ -47,7 +47,7 @@ $(function() {
         		console.log("uID : " + uID);
 
         		//プロファイル取得画面に遷移
-        		document.location = "./init001.html";
+        		document.location = "views/choice1.html";
         		//document.location = "./map.html";
 			}
 		});

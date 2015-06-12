@@ -1,5 +1,5 @@
 /*
- * init001.html, init002.html, init003.html用
+ * choice1.html, choice2.html, choice3.html用
  * 女の子の好み情報をPUT
 */
 
@@ -23,7 +23,7 @@ var setGirlPreference = function(cute, beatiful, lolita, milf, sexy, pure, callb
             console.log("failed to get userID.");
             //テスト用ID設定
             userID = "52a4961cf9d6ee6a59000001";
-            
+
         //PCの場合
         } else {
             console.log("pc case");

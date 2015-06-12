@@ -56,6 +56,6 @@ $(function(){
 	});;
 
 	$('#main > button').on('click touchend', function(){
-		location.href = './girlmap.html';
+		location.href = 'views/girlmap.html';
 	});
 });
