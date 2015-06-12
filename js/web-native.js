@@ -30,6 +30,7 @@ webNative.getUserID = function(callback) {
 		document.location = "rehack.app.local://getUserID";
 	// それ以外の場合(テストIDを使用)
 	} else {
+		console.log('pc gt user id ...');
 		callback("PC_ACCESS");
 		//callback("52b4939261c56a7f29000001");
 	}
