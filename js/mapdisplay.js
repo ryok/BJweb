@@ -35,19 +35,19 @@ function setInfoWindow(id, lng, lat, name, img) {
     if (preName != name) {
         console.log("data name : " + name);
         preName = name;
-                
+
         // 情報ウィンドウを表示
         var infoLatLng = new google.maps.LatLng(lat, lng);
 
         var contentStr = "<dl id='infowin1'><dt><font size='3'>" + name +
-                        "</font></dt><dd>" + 
-                        "<img src='" + img + "' width='100' align='left' />" + 
+                        "</font></dt><dd>" +
+                        "<img src='" + img + "' width='100' align='left' />" +
                         "<button type='button' class='favBtn' id='" + id +
-                        "'><font size='2' >★</font></button><br>" + 
-                        "<button type='button' class='dBtn' onClick='' id='sID_" + id + 
+                        "'><font size='2' >★</font></button><br>" +
+                        "<button type='button' class='dBtn' onClick='' id='sID_" + id +
                         "'><font size='2'>詳細情報</font></button>" +
                         "</dd></dl>";
-                                
+
         infoWindow_ary[infoWindow_num] = new google.maps.InfoWindow({
                         content: contentStr,
                         position: infoLatLng
@@ -107,11 +107,11 @@ function MarkerSet(id, lng, lat, name, img) {
         });
 
         var contentStr = "<dl class='infowin'><dt><font size='3'>" + name +
-                            "</font></dt><dd>" + 
-                            "<div align='middle'><img src='" + img + "'/></div>" + 
+                            "</font></dt><dd>" +
+                            "<div align='middle'><img src='" + img + "'/></div>" +
                             "<div align='bottom'><div align='middle'><button type='button' class='favBtn' id='" + id +
-                            "'>★</button>" + 
-                            "   <button type='button' class='dBtn' onClick='' id='sID_" + id + 
+                            "'>★</button>" +
+                            "   <button type='button' class='dBtn' onClick='' id='sID_" + id +
                             "'>見る</button></div></div>" +
                             "</dd></dl>";
 
@@ -123,21 +123,21 @@ function MarkerSet(id, lng, lat, name, img) {
         // イベント登録　マーカーをクリックしたとき
         google.maps.event.addListener (marker_ary[marker_num], 'click', function() {
             console.log("########clicked.#########");
-     
+
             //先に開いた情報ウィンドウがあれば、closeする
             if (currentInfoWindow) {
                 currentInfoWindow.close();
             }
-     
+
             //情報ウィンドウを開く
             infoWnd.open(map, marker_ary[marker_num]);
-     
+
             //開いた情報ウィンドウを記録しておく
             currentInfoWindow = infoWnd;
         });
     //}
 }
- 
+
 
 //サーバーから情報取得用関数
 function getInformation(userID) {
@@ -149,8 +149,8 @@ function getInformation(userID) {
     var minY = bounds.getSouthWest().lat(); //南
     var northEast = maxX + ", " + maxY;
     var southWest = minX + ", " + minY;
-    var url_params = "?userId=" + userID + 
-                "&lng=" + map.getCenter().lng() + 
+    var url_params = "?userId=" + userID +
+                "&lng=" + map.getCenter().lng() +
                 "&lat=" + map.getCenter().lat() +
                 "&ne=" + northEast +
                 "&sw=" + southWest;
@@ -162,8 +162,8 @@ function getInformation(userID) {
         sw: southWest
     };*/
     //var url = "http://rehack-node.cloudapp.net/map/";
-    //var url = "http://rehack-node.cloudapp.net/map/" + url_params; 
-    var url = "http://artra.cloudapp.net:3000/map/" + url_params; 
+    //var url = "http://rehack-node.cloudapp.net/map/" + url_params;
+    var url = "http://artra.cloudapp.net/map/" + url_params; 
 
     //マップ上に表示する求人（美女）取得GET
     sendRequest("GET", url, {}, function(data) {
@@ -172,9 +172,9 @@ function getInformation(userID) {
         if(data) {
             for(var i in data) {
                 MarkerSet(data[i]._id,
-                    data[i].lnglat[0], 
-                    data[i].lnglat[1], 
-                    data[i].name, 
+                    data[i].lnglat[0],
+                    data[i].lnglat[1],
+                    data[i].name,
                     data[i].img);
             }
 
@@ -184,12 +184,12 @@ function getInformation(userID) {
 
             //テスト用サンプル
             /*var data = [
-                        { 
+                        {
                             "name": 'テレコムセンター',
                             "img": 'http://imgcc.naver.jp/kaze/mission/USER/20130209/88/899368/40/400x642x1d105fd658f5d7c6689f68c1.jpg',
                             "lnglat": [ location.lng + 0.006, location.lat + 0.001 ]
                         },
-                        { 
+                        {
                             "name": 'デニーズ',
                             "img": 'http://www.kotono8.com/wiki/images/f/f9/%E7%94%B0%E4%B8%AD%E7%BE%8E%E4%BF%9D.jpg',
                             "lnglat": [location.lng - 0.005, location.lat - 0.008]
@@ -201,9 +201,9 @@ function getInformation(userID) {
                         ]
             for(var i in data) {
                 MarkerSet(data[i]._id,
-                    data[i].lnglat[0], 
-                    data[i].lnglat[1], 
-                    data[i].name, 
+                    data[i].lnglat[0],
+                    data[i].lnglat[1],
+                    data[i].name,
                     data[i].img);
             }*/
         }
@@ -231,7 +231,7 @@ $(function(){
                 console.log("failed to get userID.");
                 alert("ユーザIDが取得できません");
                 //userID = "52aef1976570b0f0c0000001";
-            
+
             //PCの場合
             } else {
                 console.log("pc case");
