@@ -9,3 +9,8 @@ iphone(
 		{"_id":"52a1dc2ad29502162e000fd3", "img": "./img/girl7.jpg", "name": "高時給バイト募集G" ,"catch": "", "pay": "", "detail": "", "url": "http://froma.com/s/p/baito/F1    3010Bs.jsp?rqmt_id=32565550&edhition_cd=01"},
 	]
 );
+test(
+	[
+		{"_id":"52b4939261c56a7f29000001", "img": "./img/girl1.jpg", "name": "六本木Aショップ", "catch": "オープニングスタッフ募集！カジュアルなイタリアンバルが来年1月六本木に登場！東京タワーの目の前にあるブライダルレストラン“TANGO”の姉妹店。OPENまでの間は近隣の姉妹店で研修でき、すぐに働きたい人も安心◎みんな一緒のスタートで同期もいっぱい☆", "pay":"[Ａ][Ｐ]時給1100円～[社]月給25万円～★22時以降、時給1375円以上！", "detail": "[派][契]美味しいモノ大好き！[1]TELオペレーター [2]HP更新スタッフ", "url": "http://froma.com/s/p/baito/F13010Bs.jsp?rqmt_id=32565550&edhition_cd=01"}
+	]
+);
