@@ -1,41 +1,41 @@
-# 美女マップクライアント
-
-・index.html
+# 美女マップ(クライアント)
+ バイト先で働く美女からバイトを探すサービス
+-----
+* index.html
 初期画面
 
-・choice1.html, choice2.html, choice3.html
+* choice1.html, choice2.html, choice3.html
 初期設定画面
 
-・map.html
+* map.html
 マップ画面
 
-・js
-	profile-set.js
+* js
+ - profile-set.js
 　　初期設定画面で女の子を選択したときに好み情報をPOST
 
-　　mapdisplay.js
+ - mapdisplay.js
 　　地図表示処理、情報ウィンドウ配置処理を実装
 
-　　location.js
+ - location.js
 　　現在地情報を取得
 
-　　init-user.js
+ - init-user.js
 　　index.htmlにてスタートボタンプッシュ鵜時に実行
 　　ユーザ情報がある場合はマップ画面へ、ない場合は初期設定画面へ遷移
 
-・css
-　　for_init.css
-	初期設定画面のスタイル
-
-　　login_style.css
-　　index.htmlのスタイル
-
-　　map_style.css
-　　map.htmlのスタイル
+* css
+ - for_init.css
+初期設定画面のスタイル
+ - login_style.css
+index.htmlのスタイル
+ - map_style.css
+map.htmlのスタイル
 
 
 ーーーーーー
-
+***
+---
 
 2013/12/13
 ・各ファイルにコメントを追加
